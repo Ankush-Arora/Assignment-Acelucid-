@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+     <script>
+       function myFun()
+       {
+         var id=document.getElementById("userName").value;
+         var pas=document.getElementById("pass").value;
+         if(id=="ankush-arora" && pas=="1234")
+         {
+           window.location.href="http://localhost/crud/display.php";
+         }
+         else{
+           alert("Invalid UserName and Password");
+         }
+       }
+     </script>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+     background: rgb(105, 128, 136) ;
+      }
+      .row
+      {
+        background: rgb(121, 154, 155);
+      }
+      .btn1
+      {
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .btn1:hover{
+        background: white;
+        border: 1px solid;
+        color: rgb(70, 49, 49);
+      }
+    </style>
+  </head>
+  <body>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+    <section class="Form my-4 mx-5">
+
+      <div class="container mx-10">
+        <div class="row no-gutters">
+          <div class="col-lg-5">
+            <img src="logo.png" class="img-fluid">
+          </div>
+          <div class="col-lg-7 px-5 pt-3">
+              <form name="myForm" method="post">
+                <h6 class="font-weight-bolt py-3">ENTER USER NAME</h6>
+                <div class="form-row">
+                  <div class="col-lg-7">
+                    <input type="text" placeholder="User Name" id="userName" autocomplete="off" class="form-control">
+                  </div>
+                </div>
+                <h6 class="font-weight-bolt py-3">ENTER PASSWORD</h6>
+                <div class="form-row">
+                  <div class="col-lg-7">
+                    <input type="password" placeholder="password" id="pass" class="form-control mb-3">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-lg-7">
+                   <button type="button" class="btn1 mb-2" onclick="myFun()">Login</button>
+                   <p>Don't have an account? <a href="#">Register here</a> </p>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
